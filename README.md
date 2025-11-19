@@ -54,7 +54,7 @@ proyecto-unidad4/
 
 ### 1. Clonar repositorio
 ```bash
-git clone <url-repositorio>
+git clone https://github.com/kevinazuero/practica-semana-14.git
 cd proyecto-unidad4
 ```
 
