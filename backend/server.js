@@ -9,7 +9,14 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+// CORS configurado para tu frontend
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://deploy-omega-rouge.vercel.app'],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json());
 app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: false }));
 app.use(passport.initialize());
