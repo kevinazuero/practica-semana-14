@@ -1,4 +1,4 @@
-# Proyecto Unidad 4 - CRUD con JWT y OAuth
+# CRUD con JWT y OAuth
 
 Sistema completo de autenticación y gestión de usuarios con Node.js, Express, MongoDB, React y Vite.
 
